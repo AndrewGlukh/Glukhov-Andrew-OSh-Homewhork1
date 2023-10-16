@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW - HM</title>
+    <link rel="stylesheet" href="css/stanis.css">
+
+</head>
+<body>
+    <!-- Хэдер -->
+    <header class="header">
+        <a href="http://info.homeet.styleru.org/"><img src="img/header image.png" width="200" alt=""></a>
+    </header>
+
+    <main style="margin-left: 100px; font-family: MuseoSansCyrl100, Arial, Helvetica, sans-serif; position: relative;">
+        <!-- Кнопка "выйти из аккаунта" -->
+        <a href="http://info.homeet.styleru.org/"> <button class="button" id="exitbut">Выйти из аккаунта</button> </a>
+        <br><br><br><br><br><br><br><br>
+        
+        <div>
+            <a href="http://info.homeet.styleru.org/"> <button class="button">На главную</button> </a>
+        </div>
+        <br>
+        <div>
+            <span style="font-size: 220%;">Создание профиля</span>
+            <span>/ О себе</span>
+        </div>
+        <br>
+        <section>
+            <!-- Ввод фото -->
+            <div class="photo-box" style="text-align: center;">
+                <form method="post" enctype="multipart/form-data">
+                    <br><br>
+                    <div><b>Аватар профиля</b></div>
+                    <br>
+                    <label class="input-file">
+                            <input type="file" name="file">
+                            <span class="input-file-btn">Загрузить</span>           
+                     </label>
+                     <br>
+                     <span class="input-file-text">Загрузите фотографию весом не более 10мб</span>
+                </form>
+            </div>
+            <br><br>
+            <!-- Все прочие вводы -->
+            <form action="">
+                <div style="position: relative;"><label for="fio" class="form-label">Имя и фамилия</label>
+                <input class="grey-form" type="text" id="fio" name="fio" value="" placeholder="Иван Иванов"></div>
+
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="male">Парень<span></span><span class="radio-select-dot"5></span></label>
+                    <label><input type="radio" name="gender" value="female">Девушка<span></span><span class="radio-select-dot"></span></label>
+                </div> <br>
+
+                <div><input type="text" class="grey-form" placeholder="Дата рождения" style="min-width: 230px;" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"></div> <br>
+
+                <div><input class="grey-form" type="text" placeholder="Телеграм"></div> <br>
+
+                <div style="position: relative;"><label class="form-label" for="phone-num">Номер телефона</label>
+                    <input class="grey-form" type="tel" name="phone-num" id="phone-num" placeholder="+7..."></div> <br>
+
+                <div style="position: relative;"><label class="form-label" for="o-sebe">О себе</label>
+                    <input class="grey-form" style="height: 80px;" type="text" name="o-sebe" id="o-sebe" placeholder="Люблю..."></div>
+
+                <div style="font-size: 10; color: rgb(174, 174, 174);">Например: люблю хтмл</div>
+                
+            </form>
+        </section>
+        <!-- Окошки справа -->
+        <section style="position: absolute; right: 200px; top: 265px;">
+            <div style="font-size: 12; color: rgb(101, 101, 101);">Так будет выглядеть твоя будущая страница</div> <br>
+            <div class="acc-preview">
+                <div style="height: 1px;"></div>
+                <div style="border: dashed 3px rgb(207, 207, 207); border-radius:20px; height: 160px; width:160px; margin-top: 20px; margin-left: 21px;"></div>
+                <button class="input-file-btn" style="margin: 21px; background-color:rgb(129, 0, 168, 0.5); border-color:rgb(129, 0, 168, 0.5);">Показать контакты</button>
+                <div style="position:absolute; top:21px; left: 210px; font-size: 20;;"><b>Иван Инванов</b></div>
+            </div> <br>
+        <!-- Второе окошко справа -->
+            <div class="acc-preview" style="height:100px; position: relative;">
+                <div style="padding-top: 20px; padding-left: 10px;">
+                    <b>Мы совсем ничего о тебе не знаем</b>
+                    <div style="padding-top: 5px;">Рассажи о себе</div>
+                    <div>Люди пишут тем, кому доверяют. Тем более при поиске соседа</div>
+                    <div style="position: absolute; right:20px; top: 20px"><img src="img/sad-smile.png" alt="sad"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br><br><br><br><br>
+    <!-- Футер и линия у него -->
+    <div style="position: absolute; right:0px; left:0px; height: 0px; border-top: solid 1px #8a8a8a;"></div>
+    <footer class="footer">
+        <div style="color: rgb(78, 0, 101); font-size: 40px;">Support@homeet.com</div>
+        <div style="color: rgb(174, 174, 174);">Техническая поддержка</div>
+        <br>
+        <span>О сервисе</span><span style="margin-left: 20px;"></span>Контакты<span style="margin-left: 20px;">Политика конфиденциальности</span>
+        <a class="socset-box" href="https://telegram.org/?1&ysclid=lnrpeixor2513423268" style="position: absolute; right: 260px;">
+            <img src="img/tg-href.png" width="35px" alt="tg" style="margin-top: 6px;"></a>
+        <a class="socset-box" href="https://vk.com/?ysclid=lnrpfguozw618824200" style="position: absolute; right:210px;">
+            <img src="img/vk-href.png" width="35px" alt="vk" style="margin-top: 8px;"></a>
+        <br><br><br>
+        <div style="height: 0px; margin-right: 196px; border: solid 1px rgb(78, 0, 101);"></div>
+        <br><br><br>
+        <div style="color: rgb(174, 174, 174);">Предложение не является публичной офертой</div>
+        <div style="color: rgb(174, 174, 174);"><span>Сервис не несёт ответственности за действия пользователей, достоверность информации и т. д.</span>
+        <span style="position: absolute; right: 210px;">Сделано в <b style="color: black;">бвср</b></span></div>
+    </footer>
+
+
+</body>
+</html>

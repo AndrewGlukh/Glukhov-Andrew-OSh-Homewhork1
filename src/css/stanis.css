@@ -1,0 +1,230 @@
+.header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 5px 5px 0px rgb(129, 0, 168, 0.5);
+}
+
+.acc-preview{
+    box-shadow: 0px 0px 10px 0px rgba(146, 146, 146, 0.806);
+    height:300px;
+    width:600px;
+    border-radius:20px;
+    position:relative;
+  }
+
+.p {
+    width: 500px;
+}
+
+.form {
+    display: block;
+}
+
+#exitbut{
+    position:absolute;
+    top:40px;
+    right:80px;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
+    /* left: 550px; */
+    /* top: 50px; */
+    height: 40px;
+    color: rgb(78, 0, 101);
+    background-color: white;
+    border: 1px solid rgb(78, 0, 101);
+    transition: 1s all;
+    border-radius: 10px;
+    z-index: 2;
+}
+.button::before {
+    content: '';           
+    position: absolute;
+    top: -0.5px;
+    left: -0.5px;
+    width: 10px;
+    height: 10px;
+    transition: 1s all;
+}
+.button::after {
+    content: '';           
+    position: absolute;
+    bottom: -0.5px;
+    right: -0.5px;
+    width: 10px;
+    height: 10px;
+    transition: 1s all;
+
+    
+}
+.button:hover {
+    background-color: rgb(78, 0, 101);
+    color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.389);
+}
+.button:hover::before {
+    width: 100%;
+    height: 100%;
+    border-color: rgb(78, 0, 101);
+}
+.button:hover::after {
+    width: 100%;
+    height: 100%;
+    border-color: rgb(78, 0, 101);
+}
+
+.footer {
+    margin-top: 100px;
+    margin-left: 100px; 
+    font-family: MuseoSansCyrl100, Arial, Helvetica, sans-serif;
+}
+
+.socset-box{
+    background:url("tg-transp.png") rgb(0,0,0,0);
+    height: 35px;
+    width: 35px;
+    background-color: #e7e7e7;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.photo-box{
+    height: 200px;
+    width: 400px;
+    border: dashed 3px #8a8a8a;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* инпут фото взят из инета */
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file-btn {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: rgb(78, 0, 101);
+	line-height: 22px;
+	height: 40px;
+	padding: 8px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+    border: solid 1px rgb(78, 0, 101);
+	transition: background-color 0.2s, border 0.2s;
+}
+.input-file-text {
+	padding: 0 10px;
+    color:rgb(174, 174, 174);
+	line-height: 40px;
+	display: inline-block;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Focus */
+.input-file input[type=file]:focus + .input-file-btn {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover/active */
+.input-file:hover .input-file-btn {
+	background-color: #fff;
+    color:rgb(78, 0, 101);
+}
+.input-file:active .input-file-btn {
+    color: rgb(78, 0, 101);
+	background-color: #fff;
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + .input-file-btn {
+	background-color: #eee;
+}
+
+.grey-form{
+    outline:none;
+    background-color: #ececec;
+    height: 40px;
+    min-width: 400px;
+    border-radius: 10px;
+    border: 0px white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: top;
+}
+/* взято из инета с изменениями */
+.form-label{
+    font-size: 13px;
+    position: absolute;
+    /* смещение относительно родительского элемента 10px вверх от верхнего края и   10px влево */
+    top: -8px;
+    left: 5px;
+    background: #ffffff00;
+    padding: 0 5px;
+}
+
+/* взято из инета с изменениями */
+.radio input[type='radio'] {
+    display: none;
+    /*removes original button*/
+  }
+  .radio label:before {
+    /*styles outer circle*/
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 1px solid rgb(114, 0, 129);
+    background-color: transparent;
+    z-index: 1;
+  }
+  .radio label {
+    position: relative;
+  }
+  .radio label input[type='radio']:checked+span {
+    /*styles inside circle*/
+    border-radius: 11px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    position: absolute;
+    top: -1px;
+    left: 0.5px;
+    background-color: rgb(114, 0, 129);
+  }
+
+  .radio-select-dot{
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:4.35px;
+    left: 5.55px;
+    visibility: visible;
+    background-color: white;
+    z-index: 3;
+  }
